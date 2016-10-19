@@ -1,0 +1,81 @@
+﻿<div class="widgets" >
+    <div class="row" >
+        <div class="col-md-6">
+            <div ba-panel
+                 ba-panel-title="Produto"
+                 ba-panel-class="with-scroll">
+               
+                    <div class="col-lg-10">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Código</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Código" ng-model="product.code">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" class="form-control" placeholder="Nome" ng-model="product.name">
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="quantity">Quantidade</label>
+                                <input type="text" class="form-control" name="quantity" placeholder="Quantidade" ng-model="product.quantity">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword4">Unidade</label>
+                                <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Unidade" ng-model="product.unit">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="value">Valor Unitário</label>
+                                <input type="text" class="form-control"  name="value" placeholder="Valor Unitário" ng-model="product.value">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword6">Valor Total</label>
+                                <input type="text" class="form-control" id="exampleInputPassword6" placeholder="Valor Total" ng-model="product.amount">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" ng-click="addRow()" class="btn btn-primary" />
+                        </div>
+                    </div>
+              
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div ba-panel
+                    ba-panel-class="with-scroll" class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="text-center"> Nome</th>
+                            <th class="text-center">Quantidade</th>
+                            <th class="text-center">Valor</th>
+                            <th class="text-center"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="product in products" >
+                            <th class="text-nowrap" scope="row">{{product.name}}</th>
+                            <td>{{product.quantity}}</td>
+                            <td>{{product.value | currency}}</td>
+                            <td class="text-center"><button type="button" class="btn btn-danger btn-icon"><i class="ion-close-circled"></i></button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <div class="align-right">
+                        <button progress-button="progressFunction()" pb-style="shrink" class="btn btn-warning">Cancelar</button>
+                        <button progress-button="progressFunction()" ng-click="SendTransaction()"  pb-style="shrink" class="btn btn-warning">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+

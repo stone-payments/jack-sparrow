@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JackSparrow.Api", "jack-sparrow.api\JackSparrow.Api.csproj", "{781896DC-887F-4BF9-85DE-71C6E9BA3604}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Documentation", "1 - Documentation", "{802CC3EB-D9F7-4CE7-A661-2530AD4DEF47}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Presentation", "2 - Presentation", "{F5C95606-375B-4498-A63A-CA65A0514CC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{8A62CAD0-905C-4604-8FB3-B6D41B633691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JackSparrow.App", "jack-sparrow\JackSparrow.App.csproj", "{B7849172-E247-4398-AD46-9F3ACC60225F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JackSparrow.Domain", "JackSparrow.Domain\JackSparrow.Domain.csproj", "{CC7B5BA7-B5E2-4333-9577-474A277F1E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JackSparrow.Data", "JackSparrow.Data\JackSparrow.Data.csproj", "{2A74297A-CECA-4E86-B8EA-BF467562AF63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{0633D667-0AE0-416B-A76F-E6255E41C9E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{4C12D103-0432-4216-8FD1-480C53C162CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{781896DC-887F-4BF9-85DE-71C6E9BA3604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781896DC-887F-4BF9-85DE-71C6E9BA3604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781896DC-887F-4BF9-85DE-71C6E9BA3604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781896DC-887F-4BF9-85DE-71C6E9BA3604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7849172-E247-4398-AD46-9F3ACC60225F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7849172-E247-4398-AD46-9F3ACC60225F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7849172-E247-4398-AD46-9F3ACC60225F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7849172-E247-4398-AD46-9F3ACC60225F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC7B5BA7-B5E2-4333-9577-474A277F1E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7B5BA7-B5E2-4333-9577-474A277F1E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7B5BA7-B5E2-4333-9577-474A277F1E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7B5BA7-B5E2-4333-9577-474A277F1E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A74297A-CECA-4E86-B8EA-BF467562AF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A74297A-CECA-4E86-B8EA-BF467562AF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A74297A-CECA-4E86-B8EA-BF467562AF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A74297A-CECA-4E86-B8EA-BF467562AF63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{781896DC-887F-4BF9-85DE-71C6E9BA3604} = {4C12D103-0432-4216-8FD1-480C53C162CA}
+		{B7849172-E247-4398-AD46-9F3ACC60225F} = {F5C95606-375B-4498-A63A-CA65A0514CC6}
+		{CC7B5BA7-B5E2-4333-9577-474A277F1E15} = {8A62CAD0-905C-4604-8FB3-B6D41B633691}
+		{2A74297A-CECA-4E86-B8EA-BF467562AF63} = {0633D667-0AE0-416B-A76F-E6255E41C9E4}
+	EndGlobalSection
+EndGlobal
